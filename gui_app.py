@@ -83,6 +83,7 @@ def browse_destination():
     destination_path.set(filedialog.askdirectory())
 
 # Create the main application window
+
 root = tk.Tk()
 root.title("File Organizer")
 root.geometry("600x400")

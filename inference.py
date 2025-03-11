@@ -5,10 +5,10 @@ import numpy as np
 import json
 
 # Load the trained model
-model = tf.keras.models.load_model("D:/workspace/python/folder_manager/models/image_classifier_model.h5")
+model = tf.keras.models.load_model("C:/Users/HP/Desktop/My resume Project/FileZen/FileZen/models/image_classifier_model.h5")
 
 # Load the class labels
-with open("D:/workspace/python/folder_manager/models/class_labels.json", "r") as json_file:
+with open("C:/Users/HP/Desktop/My resume Project/FileZen/FileZen/models/class_labels.json", "r") as json_file:
     class_labels = json.load(json_file)
 
 # Image dimensions
@@ -29,8 +29,8 @@ def predict_image(image_path):
 
     return predicted_label
 
-# Example usage
-if __name__ == "__main__":
-    image_path = r"D:\Docs\OBC-certificate.jpg"  # Replace with your image path
-    predicted_label = predict_image(image_path)
-    print(f"The predicted class for the image is: {predicted_label}")
+# # Example usage
+# if __name__ == "__main__":
+#     image_path = r"D:\Docs\OBC-certificate.jpg"  # Replace with your image path
+#     predicted_label = predict_image(image_path)
+#     print(f"The predicted class for the image is: {predicted_label}")

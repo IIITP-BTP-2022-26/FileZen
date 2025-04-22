@@ -43,6 +43,7 @@ base_model = MobileNetV2(
     input_shape=(IMG_HEIGHT, IMG_WIDTH, 3),
 )
 
+
 # Freeze the base model layers
 base_model.trainable = False
 
@@ -75,6 +76,7 @@ history = model.fit(
 # Step 6: Save the trained model
 model.save("models/image_classifier_model.h5")
 print("Model saved as 'image_classifier_model.h5'")
+
 
 # Save the class labels to a JSON file
 class_labels = list(train_generator.class_indices.keys())

@@ -10,7 +10,6 @@ import PyPDF2
 # Initialize classification pipelines
 image_classifier = pipeline("image-classification", model="google/vit-base-patch16-224")
 pdf_classifier = pipeline("text-classification", model="distilbert-base-uncased")
-
 text_classifier = pipeline("text-classification", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 # Supported file extensions

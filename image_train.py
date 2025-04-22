@@ -8,7 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import json
 
 # Path to the dataset
-dataset_path = "D:/workspace/python/folder_manager/dataset/images"
+dataset_path = "D:/workspace/btp/folder_manager/dataset/images"
 
 IMG_HEIGHT, IMG_WIDTH = 224, 224
 BATCH_SIZE = 32

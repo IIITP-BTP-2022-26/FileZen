@@ -1,0 +1,7 @@
+tensorflow>=2.6.0
+numpy>=1.19.5
+Pillow>=8.0.0
+sentence-transformers>=2.2.0
+scikit-learn>=1.0.0
+PyPDF2>=2.0.0
+python-docx>=0.8.11
